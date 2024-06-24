@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+   .bouncing {
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+   }
+   .bouncing {
+      display: flex;
+      flex-direction: row;
+   }
+   .bouncing div {
+      width: 40px;
+      height: 40px;
+      background-color: rgb(55, 17, 108);
+      margin: auto 20px;
+      border-radius: 50%;
+      animation: bouncing 0.3s linear infinite alternate-reverse;
+   }
+   @keyframes bouncing {
+      0% {
+         transform: translateY(0);
+      }
+      100% {
+         transform: translateY(-150px);
+      }
+   }
+</style>
+</head>
+<body>
+   <div class="bouncing">
+      <div class="bouncings"></div>
+   </div>
+</body>
+</html>
